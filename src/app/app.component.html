@@ -1,79 +1,78 @@
 <div class="mdc-card textCenter">
-  <div class="row">
-      <h2>Juego de tic tac toe</h2>
-  </div>
+    <div class="row">
+        <h2>Juego de tic tac toe</h2>
+    </div>
 </div>
-<div class=" contentLeft mdc-card" >
-  <div class="row" >
-      <div class="col-auto">
-          <div class="row">
-              <button [disabled]="disableBtn1" id="1" class="buttonG" (click)="getResp($event,1)" >
+<div class=" contentLeft mdc-card">
+    <div class="row">
+        <div class="col-auto">
+            <div class="row">
+                <button [disabled]="disableBtn1" id="1" class="buttonG" (click)="getResp($event,1)">
                   <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">{{btn1}}</span>
+                 
               </button>
-              <button [disabled]="disableBtn1" id="2" class="buttonG" (click)="getResp($event,2)">
+                <button [disabled]="disableBtn1" id="2" class="buttonG" (click)="getResp($event,2)">
                   <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">{{btn2}}</span>
+                  
               </button>
-              <button  [disabled]="disableBtn1" id="3" class="buttonG" (click)="getResp($event,3)">
+                <button [disabled]="disableBtn1" id="3" class="buttonG" (click)="getResp($event,3)">
                   <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">{{btn3}}</span>
+                 
               </button>
-          </div>
-          <div class="row">
-              <button [disabled]="disableBtn1" id="4" class="buttonG" (click)="getResp($event,4)">
+            </div>
+            <div class="row">
+                <button [disabled]="disableBtn1" id="4" class="buttonG" (click)="getResp($event,4)">
                   <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">{{btn4}}</span>
+                  
               </button>
-              <button [disabled]="disableBtn1" id="5" class="buttonG" (click)="getResp($event,5)">
+                <button [disabled]="disableBtn1" id="5" class="buttonG" (click)="getResp($event,5)">
                   <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">{{btn5}}</span>
+                  
               </button>
-              <button [disabled]="disableBtn1" id="6" class="buttonG" (click)="getResp($event,6)">
+                <button [disabled]="disableBtn1" id="6" class="buttonG" (click)="getResp($event,6)">
                   <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">{{btn6}}</span>
+                 
               </button>
-          </div>
-          <div class="row">
-              <button  [disabled]="disableBtn1" id="7" class="buttonG" (click)="getResp($event,7)">
+            </div>
+            <div class="row">
+                <button [disabled]="disableBtn1" id="7" class="buttonG" (click)="getResp($event,7)">
                   <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">{{btn7}}</span>
+                 
               </button>
-              <button [disabled]="disableBtn1" id="8" class="buttonG" (click)="getResp($event,8)">
+                <button [disabled]="disableBtn1" id="8" class="buttonG" (click)="getResp($event,8)">
                   <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">{{btn8}}</span>
+                 
               </button>
-              <button [disabled]="disableBtn1" id="9" class="buttonG" (click)="getResp($event,9)">
+                <button [disabled]="disableBtn1" id="9" class="buttonG" (click)="getResp($event,9)">
                   <span class="mdc-button__ripple"></span>
-                  <span class="mdc-button__label">{{btn9}}</span>
+                  
               </button>
-          </div>
-      </div>
-  </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="contentRight mdc-card">
-  <div class="row">
-      <h3 class="textCenter">Mensajes</h3>
-  </div>
-  <div class="row">
-      <p class="textCenter">
-         {{mensaje}}
-      </p>
-  </div>
-  <div class="row textCenter">
-      <button type="button" class="mdc-button mdc-button--outlined" *ngIf="empezarJuego" (click)="IniciarJuego()">
+    <div class="row">
+        <h3 class="textCenter">Mensajes</h3>
+    </div>
+    <div class="row">
+        <p class="textCenter">
+            {{mensaje}}
+        </p>
+    </div>
+    <div class="row textCenter">
+        <button type="button" class="mdc-button mdc-button--outlined" *ngIf="empezarJuego" (click)="IniciarJuego()">
           <span class="mdc-button__ripple"></span>
           <span class="mdc-button__label">Iniciar juego</span>
       </button>
-      <button type="button" class="mdc-button mdc-button--outlined" *ngIf="jugarNuevamente" (click)="jugarDenuevo()">
+        <button type="button" class="mdc-button mdc-button--outlined" *ngIf="jugarNuevamente" (click)="jugarDenuevo()">
           <span class="mdc-button__ripple"></span>
           <span class="mdc-button__label">Si</span>
       </button>
-      <button type="button" class="mdc-button mdc-button--outlined" *ngIf="jugarNuevamente" (click)="noJugarDenuevo()">
+        <button type="button" class="mdc-button mdc-button--outlined" *ngIf="jugarNuevamente" (click)="noJugarDenuevo()">
           <span class="mdc-button__ripple"></span>
           <span class="mdc-button__label">No</span>
       </button>
-  </div>
+    </div>
 </div>
 <router-outlet></router-outlet>
-
